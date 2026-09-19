@@ -2862,3 +2862,36 @@ button {
   color: #8b93a7;
   font-size: 14px;
 }
+
+/* Fix white background in interview form inputs */
+.form-grid input,
+.form-grid select,
+.form-grid textarea,
+.panel input,
+.panel select,
+.panel textarea {
+  background: #0a0f17 !important;
+  color: #edf0f7 !important;
+  color-scheme: dark;
+}
+
+.form-grid input:focus,
+.form-grid select:focus,
+.form-grid textarea:focus,
+.panel input:focus,
+.panel select:focus,
+.panel textarea:focus {
+  background: #0a0f17 !important;
+  color: #edf0f7 !important;
+}
+
+.form-grid input:-webkit-autofill,
+.form-grid input:-webkit-autofill:hover,
+.form-grid input:-webkit-autofill:focus,
+.panel input:-webkit-autofill,
+.panel input:-webkit-autofill:hover,
+.panel input:-webkit-autofill:focus {
+  -webkit-box-shadow: 0 0 0 1000px #0a0f17 inset !important;
+  -webkit-text-fill-color: #edf0f7 !important;
+  caret-color: #edf0f7;
+}
